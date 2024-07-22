@@ -14,7 +14,7 @@ export default {
 
 <template>
   <div>
-    <mc-button> default button 222</mc-button>
-    <mc-button type="primary"> primary button 222</mc-button>
+    <su-button> default button 222</su-button>
+    <su-button type="primary"> primary button 222</su-button>
   </div>
 </template>

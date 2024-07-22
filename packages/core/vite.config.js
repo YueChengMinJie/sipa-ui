@@ -38,7 +38,7 @@ export default defineConfig({
     target: 'es2015',
     lib: {
       entry: resolve(__dirname, 'index.js'),
-      name: 'myComponent',
+      name: 'sipaUI',
       fileName: 'sipa-ui',
       formats: ['es'],
     },

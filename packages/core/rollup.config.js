@@ -14,7 +14,7 @@ export default [
   {
     input: ['components/**/style/index.scss', 'style/index.scss'],
     plugins: [
-      multiInput.default(),
+      multiInput(),
       styles({
         mode: ['extract'],
         alias: {

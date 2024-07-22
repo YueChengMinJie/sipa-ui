@@ -2954,7 +2954,7 @@ packages:
     resolution: {integrity: sha512-GzB8fxEHKw0gGet5BKlpfXEqoBnzSVWwMnT+dc25wE7pFEfrU/QsvjZMP9rD4iVXHBBoemTct8mN0GJEI6ZX5A==}
     dependencies:
       '@vue/compiler-core': 3.4.33
-      '@vue/shared': 3.4.23
+      '@vue/shared': 3.4.33
     dev: true
 
   /@vue/compiler-sfc@2.7.16:
@@ -3086,10 +3086,6 @@ packages:
       '@vue/compiler-ssr': 3.4.33
       '@vue/shared': 3.4.33
       vue: 3.4.33(typescript@5.5.3)
-    dev: true
-
-  /@vue/shared@3.4.23:
-    resolution: {integrity: sha512-wBQ0gvf+SMwsCQOyusNw/GoXPV47WGd1xB5A1Pgzy0sQ3Bi5r5xm3n+92y3gCnB3MWqnRDdvfkRGxhKtbBRNgg==}
     dev: true
 
   /@vue/shared@3.4.33:

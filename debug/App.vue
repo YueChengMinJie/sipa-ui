@@ -15,8 +15,8 @@ const handleClick = (event) => {
 <template>
   <div>
     <h1>组件调试</h1>
-    <mc-button type="default" @click="handleClick">1234</mc-button>
-    <mc-button type="primary" @click="handleClick">1234</mc-button>
+    <su-button type="default" @click="handleClick">1234</su-button>
+    <su-button type="primary" @click="handleClick">1234</su-button>
   </div>
 </template>
 

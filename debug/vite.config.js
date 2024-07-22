@@ -6,11 +6,11 @@
  * @FilePath: /sipa-ui/debug/vite.config.js
  * @Description:
  */
+import { alias } from '../config';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue2';
 import VueJsx from '@vitejs/plugin-vue2-jsx';
 import VueMacros from 'unplugin-vue-macros/vite';
-import { alias } from '../config';
 
 export default defineConfig({
   plugins: [

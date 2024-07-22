@@ -1,13 +1,13 @@
 ---
 home: true
 
-heroText: 基于Vue2.7的组件库
-tagline: VuePress快速搭建业务组件库文档示例
+heroText: SIPA UI组件库
+tagline: 简单 工业 前中后台 vue2+vite+rollup pc组件库
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue驱动
-    details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-  - title: 高性能
-    details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+  - title: 组件复用性
+    details: 设计通用组件以便在多个项目中快速复用，降低重复开发的成本。
+  - title: 主题定制和灵活性
+    details: 支持主题切换和样式定制，允许用户根据需求灵活调整组件外观，以及通过插槽传入自定义内容。
+  - title: 良好的文档和示例
+    details: 提供清晰的 API 文档和使用示例，帮助开发者快速理解组件使用，提升开发效率和用户体验。
 ---

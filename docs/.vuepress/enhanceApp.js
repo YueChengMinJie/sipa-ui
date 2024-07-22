@@ -6,12 +6,13 @@
  * @FilePath: /sipa-ui/docs/.vuepress/enhanceApp.js
  * @Description:
  */
-import MyComponent from '@sipa-ui/core';
+import SipaUI from '@sipa-ui/core';
 import Demo from './components/Demo.vue';
 import '@sipa-ui/core/style/index.scss';
+
 // 注册全局组件
 export default ({ Vue, options, router, siteData }) => {
   // 将全局组件注册到 Vue 实例
-  Vue.use(MyComponent);
+  Vue.use(SipaUI);
   Vue.component('Demo', Demo);
 };

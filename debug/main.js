@@ -7,11 +7,11 @@
  * @Description:
  */
 import Vue from 'vue';
-import MyComponent from '@sipa-ui/core/index';
+import SipaUI from '@sipa-ui/core/index';
 import '@sipa-ui/core/style/index.scss';
 import App from './App.vue';
 
-Vue.use(MyComponent);
+Vue.use(SipaUI);
 
 new Vue({
   el: '#app',

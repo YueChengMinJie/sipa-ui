@@ -11,8 +11,10 @@
   "devDependencies": {
     "markdown-it-container": "^3.0.0",
     "sass-loader": "^10.4.1",
-    "vuepress": "^1.9.10",
     "vue": "^2.7.14",
+    "vuepress": "^1.9.10",
     "vuepress-plugin-demo-container": "^0.2.0"
+  },
+  "dependencies": {
   }
 }

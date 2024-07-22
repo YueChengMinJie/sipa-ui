@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div>
-    <mc-button> default button </mc-button>
-    <mc-button type="primary"> primary button </mc-button>
+    <su-button> default button </su-button>
+    <su-button type="primary"> primary button </su-button>
   </div>
 </template>
