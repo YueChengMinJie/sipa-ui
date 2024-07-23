@@ -9,8 +9,7 @@
 import { computed } from 'vue';
 import { defaultPrefix } from '@sipa-ui/core/utils/config';
 
-export const useDefaultPrefix = (name) => {
-  return computed(() => {
+export const useDefaultPrefix = (name) => computed(() => {
     const defaultName = `${defaultPrefix}-${name}`;
     return {
       defaultName,
@@ -20,4 +19,3 @@ export const useDefaultPrefix = (name) => {
       },
     };
   });
-};

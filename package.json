@@ -38,10 +38,10 @@
   "lint-staged": {
     "*.{js,jsx,vue}": [
       "prettier --write src",
-      "yarn lint:fix"
+      "pnpm lint:fix"
     ],
     "*.{html,vue,css,sass,scss}": [
-      "yarn stylelint:fix"
+      "pnpm stylelint:fix"
     ]
   },
   "dependencies": {
@@ -51,6 +51,7 @@
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@types/node": "^18.18.4",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
     "@vitejs/plugin-legacy": "^4.0.5",
     "@vitejs/plugin-vue2": "^2.2.0",
     "@vitejs/plugin-vue2-jsx": "^1.1.0",

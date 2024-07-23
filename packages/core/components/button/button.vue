@@ -13,11 +13,15 @@ import { defaultComponentPrefix } from '@sipa-ui/core/utils/config';
 const props = defineProps({
   type: String,
 });
+
 const emits = defineEmits(['click']);
+
 defineOptions({
   name: `${defaultComponentPrefix}Button`,
 });
+
 const className = useDefaultPrefix('button');
+
 const handleClick = (event) => {
   emits('click', event);
 };

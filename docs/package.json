@@ -13,8 +13,7 @@
     "sass-loader": "^10.4.1",
     "vue": "^2.7.14",
     "vuepress": "^1.9.10",
-    "vuepress-plugin-demo-container": "^0.2.0"
-  },
-  "dependencies": {
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "webpack": "4"
   }
 }
