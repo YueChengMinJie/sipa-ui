@@ -17,6 +17,7 @@ const handleClick = (event) => {
     <h1>组件调试</h1>
     <su-button type="default" @click="handleClick">1234</su-button>
     <su-button type="primary" @click="handleClick">1234</su-button>
+    <su-process-preview />
   </div>
 </template>
 

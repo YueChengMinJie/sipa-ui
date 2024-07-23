@@ -14,7 +14,6 @@ const demos = reactive({});
 files.keys().forEach((key) => {
   const module = files(key);
   const componentName = key.substring(2, key.lastIndexOf('.vue')); // 提取从第二个字符到倒数第一个'.'之间的部分
-
   demos[componentName] = module.default;
 });
 const props = defineProps({

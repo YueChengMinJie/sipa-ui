@@ -22,6 +22,9 @@
   ],
   "license": "MIT",
   "type": "module",
+  "dependencies": {
+    "@antv/g6-editor": "^1.2.0"
+  },
   "devDependencies": {
     "vue": "^2.7.14"
   },

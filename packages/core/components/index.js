@@ -7,11 +7,14 @@
  * @Description:
  */
 import Button from './button';
+import ProcessPreview from './process-preview';
 
 export default (app) => {
   Button.install(app);
+  ProcessPreview.install(app);
 };
 
 // eslint-disable-next-line import/export
-export * from './button';
-export { Button };
+// export * from './button';
+// export * from './process-preview';
+export { Button, ProcessPreview };
