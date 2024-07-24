@@ -6,34 +6,13 @@
  * @FilePath: /sipa-ui/packages/core/components/button/button.vue
  * @Description:
 -->
-<script setup>
-import { useDefaultPrefix } from '@sipa-ui/core/hooks/usePrefix';
-import { defaultComponentPrefix } from '@sipa-ui/core/utils/config';
-
-const props = defineProps({
-  type: String,
-});
-
-const emits = defineEmits(['click']);
-
-defineOptions({
-  name: `${defaultComponentPrefix}Button`,
-});
-
-const className = useDefaultPrefix('button');
-
-const handleClick = (event) => {
-  emits('click', event);
-};
-</script>
-
 <template>
   <button
     :class="[
       className.defaultName,
       {
-        [className.types.isPrimary]: props.type === 'primary',
-        [className.types.isDefault]: props.type !== 'primary',
+        [className.types.isPrimary]: type === 'primary',
+        [className.types.isDefault]: type !== 'primary',
       },
     ]"
     @click="handleClick"
@@ -41,3 +20,25 @@ const handleClick = (event) => {
     <slot />
   </button>
 </template>
+
+<script>
+import { useDefaultPrefix } from '@sipa-ui/core/hooks/usePrefix';
+import { defaultComponentPrefix } from '@sipa-ui/core/utils/config';
+
+export default {
+  name: `${defaultComponentPrefix}Button`,
+  props: {
+    type: String,
+  },
+  data() {
+    return {
+      className: useDefaultPrefix('button'),
+    };
+  },
+  methods: {
+    handleClick(event) {
+      this.$emit('click', event);
+    },
+  },
+};
+</script>
