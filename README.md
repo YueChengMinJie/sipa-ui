@@ -7,9 +7,9 @@
  * @Description:
 -->
 
-# component lib template
+# SIPA UI
 
-vue 组件库模板。
+可扩展的工业平台架构-UI库。
 
 ## 组件构建
 
