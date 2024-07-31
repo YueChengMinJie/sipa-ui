@@ -7,7 +7,7 @@
  * @Description:
 -->
 <template>
-  <div :class="className.defaultName">process preview</div>
+  <div :class="className.defaultName"></div>
 </template>
 
 <script>
@@ -28,6 +28,4 @@ export default {
 };
 </script>
 
-<template>
-  <div :class="className.defaultName">process preview</div>
-</template>
+<style scoped lang="scss"></style>

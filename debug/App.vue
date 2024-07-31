@@ -17,12 +17,10 @@ const handleClick = (event) => {
     <h1>按钮</h1>
     <su-button type="default" @click="handleClick">1234</su-button>
     <su-button type="primary" @click="handleClick">1234</su-button>
-
     <hr />
 
     <h1>流程预览</h1>
     <su-process-preview />
-
     <hr />
   </div>
 </template>
