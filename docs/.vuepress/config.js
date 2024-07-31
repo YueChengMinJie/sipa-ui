@@ -37,6 +37,10 @@ module.exports = {
           title: 'Button 按钮',
           path: '/components/button',
         },
+        {
+          title: 'ProcessPreview 流程预览',
+          path: '/components/process-preview',
+        },
       ],
     },
   },

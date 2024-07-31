@@ -18,7 +18,7 @@ button/basic
 ## 复杂使用
 
 ::: demo
-button/basic22
+button/complex
 :::
 
 ### API

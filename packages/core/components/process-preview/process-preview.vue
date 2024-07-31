@@ -6,19 +6,26 @@
  * @FilePath: /sipa-ui/packages/core/components/button/button.vue
  * @Description:
 -->
-<script setup>
+<template>
+  <div :class="className.defaultName">process preview</div>
+</template>
+
+<script>
 import { useDefaultPrefix } from '@sipa-ui/core/hooks/usePrefix';
 import { defaultComponentPrefix } from '@sipa-ui/core/utils/config';
 
-const props = defineProps({
-  data: Object,
-});
-
-defineOptions({
+export default {
   name: `${defaultComponentPrefix}ProcessPreview`,
-});
-
-const className = useDefaultPrefix('process-preview');
+  props: {
+    data: Object,
+  },
+  data() {
+    return {
+      className: useDefaultPrefix('process-preview'),
+    };
+  },
+  methods: {},
+};
 </script>
 
 <template>
