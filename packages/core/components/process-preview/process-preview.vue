@@ -7,12 +7,15 @@
  * @Description:
 -->
 <template>
-  <div :class="className.defaultName"></div>
+  <div :id="id" class="process-view-container" />
 </template>
 
 <script>
-import { useDefaultPrefix } from '@sipa-ui/core/hooks/usePrefix';
+import G6Editor from '@antv/g6-editor';
+import registerNode from './registerNode';
 import { defaultComponentPrefix } from '@sipa-ui/core/utils/config';
+
+registerNode(G6Editor);
 
 export default {
   name: `${defaultComponentPrefix}ProcessPreview`,
@@ -21,10 +24,38 @@ export default {
   },
   data() {
     return {
-      className: useDefaultPrefix('process-preview'),
+      id: `${defaultComponentPrefix}-editor-container`,
+      editor: null,
+      flow: null,
     };
   },
-  methods: {},
+  mounted() {
+    const editor = new G6Editor();
+    this.editor = editor;
+
+    G6Editor.track(false);
+
+    const flow = new G6Editor.Flow({
+      graph: {
+        container: this.id,
+      },
+      align: {
+        line: {
+          stroke: '#dadce0',
+          lineWidth: 1,
+        },
+        item: true,
+      },
+      edge: {
+        shape: 'flow-smooth',
+      },
+    });
+    this.flow = flow;
+    editor.add(flow);
+  },
+  destroyed() {
+    this.editor.destroy();
+  },
 };
 </script>
 

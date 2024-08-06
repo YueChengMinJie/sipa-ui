@@ -1,6 +1,6 @@
 {
   "name": "sipa-ui",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "SIPA UI组件库",
   "scripts": {
     "prebuild": "rimraf es/ dist/",
@@ -8,14 +8,11 @@
     "build:core": "vite build",
     "build:css": "rollup -c rollup.config.js",
     "test": "vitest run --environment jsdom",
-    "test:watch": "vitest --environment jsdom"
+    "test:watch": "vitest --environment jsdom",
+    "nexus": "sh nexus.sh"
   },
-  "main": "dist/sipa-ui.js",
-  "module": "dist/sipa-ui.js",
-  "files": [
-    "dist",
-    "es"
-  ],
+  "main": "sipa-ui.js",
+  "module": "sipa-ui.js",
   "keywords": [
     "vue",
     "component library"
